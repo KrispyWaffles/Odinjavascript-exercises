@@ -1,23 +1,18 @@
 const convertToCelsius = function(fTemp) {
-  let fraction = 5 / 9;
-  let celsius = 0;
-  let fahrenheit = 0;
+let fraction = 5/9;
+let roundOneDecimal = Math.round(cTemp * 10) / 10;
+return (fTemp - 32) * fraction;
 
-  if (ftemp = fraction * (35) + 32){
-    return celsius;
-  }
-  
-  };
-  
+console.log(roundOneDecimal);
 
 };
 
-const convertToFahrenheit = function(CTemp) {
-let fraction = 5 / 9;
-
-if (Ctemp = fraction * ())
-
+const convertToFahrenheit = function(cTemp) {
+let fraction =  9/5;
+return (cTemp * fraction) + 32; 
 };
+
+
 
 // Do not edit below this line
 module.exports = {
