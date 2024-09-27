@@ -1,15 +1,14 @@
 const convertToCelsius = function(fTemp) {
 let fraction = 5/9;
-let roundOneDecimal = Math.round(cTemp * 10) / 10;
-return (fTemp - 32) * fraction;
 
-console.log(roundOneDecimal);
+return Math.round((fTemp - 32) * fraction * 10) / 10;;
 
 };
 
 const convertToFahrenheit = function(cTemp) {
 let fraction =  9/5;
-return (cTemp * fraction) + 32; 
+return Math.round((cTemp * fraction + 32) * 10) / 10;; 
+
 };
 
 
